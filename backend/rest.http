@@ -1,0 +1,41 @@
+GET http://localhost:3000
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg4MTcxNDUsImV4cCI6MTY4ODgxNzE1MCwiYXVkIjoiNjRhOTNjMDhhNjE4MWEzOGZiYmUzMzcyIiwiaXNzIjoiYWRpdHlhcGF0ZWwuY29tIn0.4ujMnCS5d6_x3paxzyZPgSgfPs6fSDsD1i_FNGKWbqY
+
+
+###Login route
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"suryasree@gmail.com",
+    "password":"12345"
+}
+
+###Register route
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "fullName":"Surya sree Bathini",
+    "email":"suryasree@gmail.com",
+    "password":"12345",
+    "phoneNumber":"9705190552"
+}
+
+
+###Get Details
+POST http://localhost:3000/auth/getDetails
+Content-Type: application/json
+
+{
+    "userId":"64e8dffc8ef09f3289643ce4"
+}
+
+###
+POST http://localhost:3000/auth/feedback
+Content-Type: application/json
+
+{
+    "Name":"Aditya Patel",
+    "feedback":"Great Job!"
+}
